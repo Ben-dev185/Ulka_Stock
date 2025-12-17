@@ -32,6 +32,9 @@ public class LoginController {
         } else {
             errorLabel.setText("Identifiants incorrects");
         }
+        System.out.println("USERNAME SAISI = " + usernameField.getText());
+        System.out.println("PASSWORD SAISI = " + passwordField.getText());
+
     }
 }
 

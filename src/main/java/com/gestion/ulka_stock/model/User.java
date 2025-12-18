@@ -17,6 +17,9 @@ public class User {
         this.role = role;
     }
 
+    public User(int id, String username, String passwordHash, String role) {
+    }
+
     // Getters & Setters
     public int getId() {
         return id;

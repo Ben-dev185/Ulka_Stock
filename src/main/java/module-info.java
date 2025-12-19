@@ -1,8 +1,13 @@
 module com.gestion.ulka_stock {
+
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires jbcrypt;
 
+    // Controllers FXML
+    opens com.gestion.ulka_stock.auth to javafx.fxml;
 
-    opens com.gestion.ulka_stock to javafx.fxml;
-    exports com.gestion.ulka_stock;
+    // Accès général
+    exports com.gestion.ulka_stock.app;
 }
